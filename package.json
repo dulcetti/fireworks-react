@@ -1,6 +1,7 @@
 {
   "name": "fireworks-react",
   "version": "0.1.0",
+  "author": "Bruno Dulcetti <brunodulcetti@gmail.com>",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,11 +13,36 @@
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "keywords": [
+    "animation",
+    "css",
+    "javascript",
+    "react"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dulcetti/fireworks-react"
+  },
+  "bugs": {
+    "url": "https://github.com/dulcetti/fireworks-react/issues"
   },
   "browserslist": {
     "production": [
